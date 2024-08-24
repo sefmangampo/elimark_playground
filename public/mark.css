@@ -8,18 +8,33 @@
   background-size: cover;
 }
 
-.navb{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 header{
     background-image: url("./assets/icons/background/headerbg.png");
 }
 
-section {
+.container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.explorebook{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
