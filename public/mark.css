@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page00{
+  background-image: url("./assets/icons/background/banner_bg.png");
+  background-size: cover;
+}
+
+.navb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background-image: url("./assets/icons/background/headerbg.png");
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
