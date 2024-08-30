@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./explore/css/impres-common.css" />
+    <link rel="stylesheet" href="./explore/css/impress-demo.css" />
+    <link rel="stylesheet" href="./explore/css/stars.css" />
+    <title>Document</title>
+  </head>
+  <body class="impress-not-supported">
+    <div class="fallback-message">
+      <p>
+        Your browser <b>doesn't support the features required</b> by impress.js,
+        so you are presented with a simplified version of this presentation.
+      </p>
+      <p>
+        For the best experience please use the latest <b>Chrome</b>,
+        <b>Safari</b> or <b>Firefox</b> browser.
+      </p>
+    </div>
+
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <div
+      id="impress"
+      data-transition-duration="1000"
+      data-width="1024"
+      data-height="768"
+      data-max-scale="3"
+      data-min-scale="0"
+      data-perspective="1000"
+    ></div>
+
+    <div class="hint">
+      <p>Use a spacebar or arrow keys to navigate.</p>
+    </div>
+    <script>
+      if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML =
+          "<p>Swipe left or right to navigate</p>";
+      }
+    </script>
+    <script src="./explore/js/slides.js"></script>
+    <script src="./explore/js/impress.js"></script>
+
+    <script>
+      impress().init();
+    </script>
+  </body>
+</html>
