@@ -9,42 +9,48 @@ function decrypt(encryptedData, key) {
   return JSON.parse(result);
 }
 
+function readData() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const encryptedData = urlParams.get("data");
+  const secretKey = "maku-secret-key";
 
-function readData ()  {
-const urlParams = new URLSearchParams(window.location.search);
-const encryptedData = urlParams.get("data");
-const secretKey = "maku-secret-key";
+  if (encryptedData) {
+    const decryptedData = decrypt(encryptedData, secretKey);
+    
+    if (!decryptedData) return;
 
-if (encryptedData) {
-  const decryptedData = decrypt(encryptedData, secretKey);
+    const { id, name, address, age, sex } = decryptedData;
 
-  if (!decryptedData) return;
+    if (id) {
+      document.getElementById("id").value = id;
 
-  const { id, name, address, age, sex } = decryptedData;
+      const imageContainer = document.getElementById("pic-photo");
 
-  if (id) {
-    document.getElementById("id").value = id;
+      if (id == 13) {
+        imageContainer.src = "../../assets/images/yanyan.jpg";
+      }
+      if (id == 12) {
+        imageContainer.src = "../../assets/images/makmak.jpg";
+      }
+    }
+
+    if (name) {
+      document.getElementById("name").value = name;
+    }
+    if (age) {
+      document.getElementById("age").value = age;
+    }
+    if (sex) {
+      document.getElementById("sex").value = sex;
+    }
+    if (address) {
+      document.getElementById("address").value = address;
+    }
+
+    console.log("Decrypted data:", decryptedData);
+  } else {
+    console.log("No encrypted data found in URL");
   }
-
-  if (name) {
-    document.getElementById("name").value = name;
-  }
-  if (age) {
-    document.getElementById("age").value = age;
-  }
-  if (sex) {
-    document.getElementById("sex").value = sex;
-  }
-  if (address) {
-    document.getElementById("address").value = address;
-  }
-
-  console.log("Decrypted data:", decryptedData);
-} else {
-  console.log("No encrypted data found in URL");
 }
-}
 
-
-readData()
-
+readData();
