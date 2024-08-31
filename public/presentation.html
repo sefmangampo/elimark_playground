@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./presentation/css/impress-common.css">
+    <link rel="stylesheet" href="./presentation/css/impress-demo.css">
+    <title>Presentation</title>
+</head>
+
+<body class="impress-not-supported">
+
+
+    <div id="impress" data-transition-duration="1000" data-width="1024" data-height="768" data-max-scale="3"
+        data-min-scale="0" data-perspective="1000">
+
+        <div class="step slide" id="bored" data-x="0" data-y="2000">
+            <div class="unang-pahina">
+                <h1>hello mga ka kupal</h1>
+                <p>this our presentation</p>
+            </div>
+        </div>
+
+        <div class="step slide" data-x="1000" data-y="1000" id="two">
+            <div class="pangalawang-pahina">
+                <h1>ang kaganapan sa pinas</h1>
+                <h2>gruop members</h2>
+                <ul>
+                    <li>layla</li>
+                    <li>gord</li>
+                    <li>lesley</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step slide" data-x="1000" data-y="1000" data-z="2000" data-rotate-y="225"="three">
+            <div class="pangatlo-pahina">
+                <h1>ang kaganapan sa pinas</h1>
+                <h2>gruop members</h2>
+                <ul>
+                    <li>layla</li>
+                    <li>gord</li>
+                    <li>lesley</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step slide" data-x="1000" data-y="1000" data-z="4000" data-rotate-z="180"="" id="four">
+            <div class="pang-apat-pahina">
+                <h1>ang kaganapan sa pinas</h1>
+                <h2>gruop members</h2>
+                <ul>
+                    <li class="leader">layla</li>
+                    <li>gord</li>
+                    <li>lesley</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 
+    id="impress"
+    data-transition-duration="1000" - seconds ng paglipat ng slide
+    data-width="1024" width ng screen 
+    data-height="768" height  ng screen
+    data-max-scale="3" 
+    data-min-scale="0"
+    data-perspective="1000" -->
+
+    <script src="./presentation/js/impress.js"></script>
+    <script>
+        impress().init();
+    </script>
+</body>
+
+</html>
