@@ -1,9 +1,90 @@
 
+*{
+    padding: 0;
+    margin: 0;
+    a{
+        text-decoration: none;
+    }
+}
 
+.image1-2-background{
+    background: url("./assets/icons/background/banner_bg.png");
+    /* line 15 to line 146 */
+   
+}
+ .header{  /*line 12 to 14 */
+    background: url(./assets/icons/background/headerbg.png);
+    text-align: center;
+    background-size: cover;
+    padding: 15px;
+    color: white;
+    font-weight: 500;
+}
 
+.nav-container, .nav-navigation{  /* line 17 to  line 43 * */
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 10px, 10px;
+}
 
+.nav-container{
+    
+    justify-content: space-evenly;
+    padding: 50px;
+}
 
+.contact-icon{ /* line 37 to 40* */
+    position: relative;
 
+    img{
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+}
+   
+ .image1{  /*line 50 to  line 61  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    
+}
 
+/* .image-hero1{
+    flex: 1;
+} */
+
+.image1-text{  /*line 52 to 62  */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+
+.image2{ /*   line 71 to 93*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.image2-text{ /* line 79 to 91 */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text1{   /*  */
+    justify-content: center;
+}
+
+.container-assets{   /*  */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 160px;
+}
 
 
