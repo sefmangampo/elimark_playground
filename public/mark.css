@@ -76,15 +76,63 @@
     gap: 5px;
 }
 
-.text1{   /*  */
-    justify-content: center;
+.text1{   /* line 95 to 99 */
+    text-align: center;
+    text-size-adjust: 10%;
 }
 
-.container-assets{   /*  */
+.container-assets{   /* line 103 to 145 */
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 160px;
 }
 
+.text2{
+    text-align: center;
+    padding: 30px;
 
+}
+
+.books-image{   /* line 167 to 203  */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: fit-content;
+    
+}
+
+.doom-image{  /*   */
+
+}
+
+.explorebook{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text3{
+    text-align: center;
+    padding: 40px;
+}
+
+.bio{
+    display: inline-block;
+}
+
+.bio-image{
+   text-align: center;
+}
+
+.Question{
+    text-align: center;
+    padding: 40px;
+}
+
+.last{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
