@@ -364,7 +364,7 @@
     display: none;
     font-size: 13px;
     line-height: 20px;
-    width: 100vw;
+    width: 80vw;
 }
 .accordion-content.active {
     display: block;
@@ -372,7 +372,7 @@
 
 .accordion-container{
   display: flex;
-  width: 100vw;
+  width: 90vw;
   justify-content: space-between;
 }
 
@@ -651,7 +651,7 @@ footer{
   display: none;
   font-size: 13px;
   line-height: 20px;
-  width: 30vw;
+  width: 27vw;
 }
 .accordion-container{
   display: flex;
