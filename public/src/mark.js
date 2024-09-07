@@ -5,7 +5,7 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-document.querySelectorAll('.accordion-title').forEach(button => {
+document.querySelectorAll('.accordion-container').forEach(button => {
     button.addEventListener('click', () => {
         const content = button.nextElementSibling;
         
